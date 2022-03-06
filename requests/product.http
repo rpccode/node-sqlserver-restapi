@@ -1,0 +1,36 @@
+@api = http://localhost:4000/products
+
+GET {{api}}
+
+
+###
+POST  {{api}}
+Content-Type: application/json
+
+{
+    "name":"microfono 2",
+    "descripccion":"dell",
+    "quantity":10
+}
+
+###
+GET  {{api}}/4
+
+
+###
+delete  {{api}}/5
+
+
+###
+POST  {{api}}/count
+
+
+###
+PUT  {{api}}/4
+Content-Type: application/json
+
+{
+    "name":"microfono 4",
+    "descripccion":"dell",
+    "quantity":20
+}
